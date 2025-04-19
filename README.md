@@ -11,4 +11,7 @@ Codes and Instructions for running EE655 Course Project
 5. Run cam_vid_baseline.ipynb to train for real inputs and evaluate jaccard score
 6. To reproduce analysis results mentioned in the paper, run analysis.ipynb file. Make sure that you select the right model from the 'models/' folder, and your final output is correct
 
-Some pre-trained models can be found here: https://drive.google.com/drive/folders/1AHWDIntsucMVuh8bfwzKxvdrb6Dnn_kF?usp=sharing
+
+A few pre trained models are available here: https://drive.google.com/drive/folders/1AHWDIntsucMVuh8bfwzKxvdrb6Dnn_kF?usp=sharing
+
+**Note**: Any error is most likely due to a non existent path, or loading model parameters into the wrong model(Ex.: Change C_ReLU function in case you want parameterized ReLU or not)

@@ -3,9 +3,9 @@ Codes and Instructions for running EE655 Course Project
 
 1. Download CamVid Dataset from this link: https://www.kaggle.com/datasets/carlolepelaars/camvid. Make sure that the files are in a folder called CamVid
 2. Run the dataset.py script to make the following datasets:
-     a. Complex_CamVid_iHSV \\
-     b. Complex_CamVid_inv_FFT \\
-     c. Complex_CamVid_RGB (Baseline) \\
+     a. Complex_CamVid_iHSV.
+     b. Complex_CamVid_inv_FFT.
+     c. Complex_CamVid_RGB (Baseline).
    Note: You can tweak the transformations variable to get save other datasets as well(HSV real images for ex.)
 3. Run complex_cam_vid.ipynb to train for complex inputs and evaluate jaccard score(Includes cells for both types of losses mentioned in write up)
 4. Run cam_vid_baseline.ipynb to train for real inputs and evaluate jaccard score

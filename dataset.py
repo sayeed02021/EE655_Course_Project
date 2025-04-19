@@ -85,8 +85,8 @@ class CamVidDataset(Dataset):
 
 if __name__=='__main__':
     # get RGB images first
-    os.makedirs('Dataset/Baseline_RGB/train', exist_ok=True)
-    os.makedirs('Dataset/Baseline_RGB/test', exist_ok=True)
+    os.makedirs('Dataset/CamVid_RGB/train', exist_ok=True)
+    os.makedirs('Dataset/CamVid_RGB/test', exist_ok=True)
 
     transforms_img = T.Compose([
         T.ToTensor(),
@@ -107,7 +107,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/Baseline_RGB/train/{save_path}.pth'
+        save_path = f'Dataset/CamVid_RGB/train/{save_path}.pth'
         data = {}
         data['mask'] = mask
         data['img'] = image
@@ -127,7 +127,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/Baseline_RGB/test/{save_path}.pth'
+        save_path = f'Dataset/CamVid_RGB/test/{save_path}.pth'
         data = {}
         data['mask'] = mask
         data['img'] = image
@@ -136,8 +136,8 @@ if __name__=='__main__':
         torch.save(data, save_path)
 
 
-    os.makedirs('Dataset/CamVid_Complex1/train', exist_ok=True)
-    os.makedirs('Dataset/CamVid_Complex1/test', exist_ok=True)
+    os.makedirs('Dataset/Complex_CamVid_iHSV/train', exist_ok=True)
+    os.makedirs('Dataset/Complex_CamVid_iHSV/test', exist_ok=True)
     transforms_img = T.Compose([
         T.ToTensor(),
         T.Resize((256,256)),
@@ -156,7 +156,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/CamVid_Complex1/train/{save_path}.pth'
+        save_path = f'Dataset/Complex_CamVid_iHSV/train/{save_path}.pth'
         data = {}
         data['mask'] = mask
         data['img'] = image
@@ -176,7 +176,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/CamVid_Complex1/test/{save_path}.pth'
+        save_path = f'Dataset/Complex_CamVid_iHSV/test/{save_path}.pth'
         data = {}
         data['mask'] = mask
         data['img'] = image
@@ -185,8 +185,8 @@ if __name__=='__main__':
         torch.save(data, save_path)
 
 
-    os.makedirs('Dataset/CamVid_Complex2/train', exist_ok=True)
-    os.makedirs('Dataset/CamVid_Complex2/test', exist_ok=True)
+    os.makedirs('Dataset/Complex_CamVid_inv_FFT/train', exist_ok=True)
+    os.makedirs('Dataset/Complex_CamVid_inv_FFT/test', exist_ok=True)
     transforms_img = T.Compose([
         T.ToTensor(),
         T.Resize((256,256))
@@ -203,7 +203,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/CamVid_Complex2/train/{save_path}.pth'
+        save_path = f'Dataset/Complex_CamVid_inv_FFT/train/{save_path}.pth'
         data = {}
         data['mask'] = mask
         # data['img'] = image
@@ -223,7 +223,7 @@ if __name__=='__main__':
 
     for image, mask, path in tqdm(dataset):
         save_path = path.split('/')[-1].split('.')[0]
-        save_path = f'Dataset/CamVid_Complex2/test/{save_path}.pth'
+        save_path = f'Dataset/Complex_CamVid_inv_FFT/test/{save_path}.pth'
         data = {}
         data['mask'] = mask
         # data['img'] = image

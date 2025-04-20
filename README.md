@@ -14,4 +14,6 @@ Codes and Instructions for running EE655 Course Project
 
 A few pre trained models are available here: https://drive.google.com/drive/folders/1AHWDIntsucMVuh8bfwzKxvdrb6Dnn_kF?usp=sharing
 
+Link to write up(With references): https://drive.google.com/file/d/1pp4hzyUPcaKrHIyyByyU-OJJ8WqxnChF/view?usp=sharing
+
 **Note**: Any error is most likely due to a non existent path, or loading model parameters into the wrong model(Ex.: Change C_ReLU function in case you want parameterized ReLU or not)
